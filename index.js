@@ -17,15 +17,9 @@ const labels = [
   "Rohit",
 ];
 Promise.all([
-  faceapi.nets.faceRecognitionNet.loadFromUri(
-    "/https://github.com/yashkumarkalyan/attendance-face-recognisation/tree/main/models"
-  ),
-  faceapi.nets.faceLandmark68Net.loadFromUri(
-    "/https://github.com/yashkumarkalyan/attendance-face-recognisation/tree/main/models"
-  ),
-  faceapi.nets.ssdMobilenetv1.loadFromUri(
-    "/https://github.com/yashkumarkalyan/attendance-face-recognisation/tree/main/models"
-  ),
+  faceapi.nets.faceRecognitionNet.loadFromUri("/models"),
+  faceapi.nets.faceLandmark68Net.loadFromUri("/models"),
+  faceapi.nets.ssdMobilenetv1.loadFromUri("/models"),
 ]).then(start);
 
 async function start() {
