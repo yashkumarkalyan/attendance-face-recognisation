@@ -29,6 +29,7 @@ body {
   color: black;
 }
 .photo {
+  color: rgb(21, 75, 224);
   padding: 10px;
   margin-top: 52px;
   width: 98vw;
@@ -49,7 +50,7 @@ img {
 .file-upload {
   position: relative;
   display: inline-block;
-  margin: 5px;
+  margin: 25px;
 }
 
 .file-upload__label {
@@ -74,4 +75,10 @@ img {
   width: 0;
   height: 100%;
   opacity: 0;
+}
+.Attendees {
+  color: rgb(15, 116, 231);
+}
+.Absent {
+  color: rgb(236, 57, 13);
 }

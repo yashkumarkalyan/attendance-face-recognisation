@@ -26,7 +26,10 @@ async function start() {
   const container = document.getElementById("photo");
   const labeledFaceDescriptors = await loadLabeledImages();
   const faceMatcher = new faceapi.FaceMatcher(labeledFaceDescriptors, 0.6);
+
+  document.getElementById("photo").innerHTML = "<h2>Now Upload</h2>";
   imageUpload.addEventListener("change", async () => {
+    document.getElementById("photo").innerHTML = null;
     if (image) image.remove();
     if (canvas) canvas.remove();
     image = await faceapi.bufferToImage(imageUpload.files[0]);
@@ -37,7 +40,7 @@ async function start() {
     canvas.style =
       "max-height: 35vh; max-width: 80vh; position : absolute; top:48px; left:0;object-fit:contain";
     container.append(canvas);
-
+    document.getElementById("btn-txt").innerHTML = "Upload Another";
     const displaySize = { width: image.width, height: image.height };
     faceapi.matchDimensions(canvas, displaySize);
     const detections = await faceapi

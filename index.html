@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>AItendance</title>
     <script defer src="face-api.min.js"></script>
     <script defer src="index.js"></script>
     <link rel="stylesheet" href="index.css" />
@@ -15,9 +15,14 @@
       <a href="https://github.com/yashkumarkalyan/aitendance/">Github</a>
       <a href="https://yashkalyan.me/">Contact</a>
     </div>
-    <div class="photo" id="photo"></div>
+    <div class="photo" id="photo">
+      <h4>Wait let AI Models<br /></h4>
+      <h2>loading...</h2>
+    </div>
     <div class="file-upload">
-      <label for="upload" class="file-upload__label">Upload Image</label>
+      <label for="upload" class="file-upload__label" id="btn-txt"
+        >Upload Image</label
+      >
       <input
         id="upload"
         class="file-upload__input"
@@ -26,13 +31,11 @@
       />
     </div>
     <div class="Attendees">
-      <h2 id="attendees">Attendees</h2>
-      will show here
+      <h2 id="attendees">Attendees Here</h2>
       <ol title="Attendees" type="1" id="Attendees"></ol>
     </div>
     <div class="Absent">
-      <h2 id="absent">Absent</h2>
-      will show here
+      <h2 id="absent">Absentees Here</h2>
       <ol title="Absent" type="1" id="Absent"></ol>
     </div>
   </body>
