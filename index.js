@@ -84,9 +84,9 @@ async function start() {
         document.getElementById("Absent").innerHTML += `<li>${labels[i]}</li>`;
       }
     }
-    document.getElementById(
-      "attendees"
-    ).innerHTML = `Attendees : ${count} & unknown : ${ucount}`;
+    document.getElementById("attendees").innerHTML = `Attendees : ${
+      count - ucount
+    } & unknown : ${ucount}`;
     document.getElementById("absent").innerHTML = `Absent : ${9 - count} `;
   });
 }
