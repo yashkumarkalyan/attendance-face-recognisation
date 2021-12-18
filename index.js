@@ -15,7 +15,6 @@ const labels = [
   "Piyush",
   "Pranshul",
   "Rohit",
-  "Rajat"
 ];
 Promise.all([
   faceapi.nets.faceRecognitionNet.loadFromUri("/models"),
