@@ -75,7 +75,7 @@ async function start() {
       });
       drawBox.draw(canvas);
     });
-    for (let i = 0; i < 9; i++) {
+    for (let i = 0; i < 10; i++) {
       if (
         document
           .getElementById("Attendees")
@@ -88,7 +88,7 @@ async function start() {
     document.getElementById("attendees").innerHTML = `Attendees : ${
       count - ucount
     } & unknown : ${ucount}`;
-    document.getElementById("absent").innerHTML = `Absent : ${9 - count} `;
+    document.getElementById("absent").innerHTML = `Absent : ${10 - count} `;
   });
 }
 
